@@ -26,7 +26,7 @@ jobs:
           STAGE: ${{ env.BRANCH_NAME }}
 
       - name: Build docker image
-        run: docker build -t webapp-atlas-front -f Dockerfile ./frontend
+        run: docker build -t webapp-atlas-front -f ./frontend/Dockerfile ./frontend
 
       - name: Deploy to AWS
         run: |
