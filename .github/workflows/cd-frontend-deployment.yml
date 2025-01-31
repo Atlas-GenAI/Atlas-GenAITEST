@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
       - prod
   workflow_run:
     workflows: ["CI / Frontend"]

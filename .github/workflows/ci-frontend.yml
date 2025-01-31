@@ -3,7 +3,7 @@ name: CI / Frontend
 on:
   push:
     branches:
-      - gh-readonly-queue/master/**
+      - prod
   pull_request:
     paths:
       - '.github/workflows/ci-frontend.yml'
