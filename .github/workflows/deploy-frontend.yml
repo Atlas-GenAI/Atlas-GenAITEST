@@ -1,4 +1,4 @@
-name: deploy to AWS
+name: deploy frontend to AWS
 on:
   push:
     branches:
@@ -26,7 +26,7 @@ jobs:
           STAGE: ${{ env.BRANCH_NAME }}
 
       - name: Build docker image
-        run: docker build -t webapp-atlas-front -f Dockerfile .
+        run: docker build -t webapp-atlas-front -f Dockerfile ./frontend
 
       - name: Deploy to AWS
         run: |
