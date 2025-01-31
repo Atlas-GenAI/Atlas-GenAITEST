@@ -3,8 +3,8 @@ name: CI / Frontend
 on:
   push:
     branches:
-      - main
       - prod
+      - main
   pull_request:
     paths:
       - '.github/workflows/ci-frontend.yml'

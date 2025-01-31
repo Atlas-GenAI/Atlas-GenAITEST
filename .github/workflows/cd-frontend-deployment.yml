@@ -4,12 +4,13 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
       - prod
   workflow_run:
-    workflows: ["CI / Frontend"]
-    types:
-      - completed
+      workflows: ["CI / Registre"]
+      types:
+        - completed
+      branches:
+        - prod
 
 jobs:
   build-and-deploy:
