@@ -21,7 +21,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
     <div className={styles.sidebar}>
       {/* Header */}
       <div className={styles.header}>
-        <div className={styles.logo}>DeepAtlas</div>
+        <div className={styles.logo}>DeepAtlas TEST1</div>
         <button className={styles.chatButton}>
           <Icon name="plusBubble" size={20} className={styles.chatIcon} />
           New chat
